@@ -24,7 +24,7 @@ const CardCart = ({ item, deleteFromCart }) => {
           deleteFromCart(item);
         }}
       >
-        <FontAwesome6 name={"trash"} color={"#F68CB5"} size={22} />
+        <FontAwesome6 name={"trash"} color={"red"} size={22} />
       </TouchableOpacity>
     </View>
   );

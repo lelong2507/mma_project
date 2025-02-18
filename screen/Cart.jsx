@@ -14,7 +14,7 @@ import { CartContext } from "../context/CartContext";
 const Cart = () => {
   const { carts, totalPrice, handleDeleteItem } = useContext(CartContext);
   return (
-    <LinearGradient colors={["#FDF0F3", "#FFFBFC"]} style={styles.container}>
+    <LinearGradient colors={["#ECE9E6", "#FFFFFF"]} style={styles.container}>
       <View style={styles.header}>
         <Header isCart={true} />
       </View>
@@ -33,7 +33,7 @@ const Cart = () => {
                 <Text style={styles.priceText}>${totalPrice}</Text>
               </View>
               <View style={styles.flexRowContainer}>
-                <Text style={styles.titleText}>Shpping:</Text>
+                <Text style={styles.titleText}>Shipping:</Text>
                 <Text style={styles.priceText}>$0.0</Text>
               </View>
               <View style={styles.divider} />
@@ -56,6 +56,7 @@ const Cart = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     padding: 15,
   },
   header: {},
@@ -70,37 +71,42 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 18,
-    color: "#757575",
-    fontWeight: "500",
+    color: "#5A5A5A",
+    fontWeight: "600",
   },
   priceText: {
     fontSize: 18,
-    color: "#757575",
-    fontWeight: "600",
+    color: "#3E3E3E",
+    fontWeight: "700",
   },
   divider: {
     borderWidth: 1,
-    borderColor: "#C0C0C0",
+    borderColor: "#DADADA",
     marginTop: 10,
     marginBottom: 5,
   },
   grandPriceText: {
-    color: "#3C3C3C",
-    fontWeight: "700",
+    color: "#2B2B2B",
+    fontWeight: "800",
   },
   button: {
-    backgroundColor: "#E96E6E",
+    backgroundColor: "#3A3D5C",
     height: 60,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 20,
+    borderRadius: 15,
     marginTop: 30,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
   },
   buttonText: {
-    fontSize: 24,
+    fontSize: 20,
     color: "#FFFFFF",
     fontWeight: "700",
+    letterSpacing: 1.1,
   },
 });
-
 export default Cart;

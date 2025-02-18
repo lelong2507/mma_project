@@ -2,123 +2,51 @@
     "products": [
         {
             "id": 1,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Jacket",
-            "price": 49.99
+            "image": "https://file.hstatic.net/1000093649/file/ong-ho-rolex-steel-submariner-date-the-hulk-green-dial-116610lv-40mm-1_9881ecc02c174dc58f3400d403186482_grande.jpg",
+            "title": "Rolex Submariner",
+            "price": 8499.99
         },
         {
             "id": 2,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/qichw3wrcioebkvzudib.png",
-            "title": "Jeans",
-            "price": 39.99
+            "image": "https://file.hstatic.net/1000093649/file/dong-ho-rolex-datejust-126300-mgflmij-41mm-1_32c9c61a75e04d4ea4699d08fc84a140_grande.jpg",
+            "title": "Rolex Datejust",
+            "price": 7399.99
         },
         {
             "id": 3,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/vy2q98s8ucsywwxjx2cf.png",
-            "title": "Acrylic Sweater",
-            "price": 29.99
+            "image": "https://24kara.com/files/sanpham/31334/1/jpg/dong-ho-rolex-cosmograph-daytona-m126519ln-0006-126519ln-0006-white-gold-mat-so-xam-thep-va-den-sang-mau-moi-2023.jpg",
+            "title": "Rolex Daytona",
+            "price": 12999.99
         },
         {
             "id": 4,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/smf81ubnfjennk9qbjm4.png",
-            "title": "Winter Coat",
-            "price": 99.99
+            "image": "https://empireluxury.vn/wp-content/uploads/2022/04/dong-ho-rolex-gmt-master-ii-40-126715chnr-0001-rootbeer-mat-so-den-day-deo-oyster-vang-hong-9.png",
+            "title": "Rolex GMT-Master II",
+            "price": 11499.99
         },
         {
             "id": 5,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/cvafl35dv9wzisdsgtd6.png",
-            "title": "Winter Shirts",
-            "price": 59.99
+            "image": "https://bloombarwatches.com/wp-content/uploads/2022/10/2022-Rolex-Explorer-124273-Black-DLC-CM681-0002-scaled.jpg",
+            "title": "Rolex Explorer",
+            "price": 6499.99
         },
         {
             "id": 6,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Shirts With Jacket",
-            "price": 149.99
+            "image": "https://empireluxury.vn/wp-content/uploads/2022/04/dong-ho-rolex-milgauss-40-116400gv-0001-mat-so-den-day-oyster-3.jpg",
+            "title": "Rolex Milgauss",
+            "price": 8499.99
         },
         {
             "id": 7,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Leather Jacket",
-            "price": 79.99
+            "image": "https://empireluxury.vn/wp-content/uploads/2024/07/dong-ho-rolex-day-date-36-128238-mat-so-xanh-la-cay-sao-chep-8.jpg",
+            "title": "Rolex Sky-Dweller",
+            "price": 16999.99
         },
         {
             "id": 8,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/qichw3wrcioebkvzudib.png",
-            "title": "Blue Jeans",
-            "price": 49.99
-        },
-        {
-            "id": 9,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/vy2q98s8ucsywwxjx2cf.png",
-            "title": "Wool Sweater",
-            "price": 39.99
-        },
-        {
-            "id": 10,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/smf81ubnfjennk9qbjm4.png",
-            "title": "Parka",
-            "price": 129.99
-        },
-        {
-            "id": 11,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/cvafl35dv9wzisdsgtd6.png",
-            "title": "Sweatshirt",
-            "price": 19.99
-        },
-        {
-            "id": 12,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Denim Jacket",
-            "price": 69.99
-        },
-        {
-            "id": 13,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Hoodie",
-            "price": 29.99
-        },
-        {
-            "id": 14,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/qichw3wrcioebkvzudib.png",
-            "title": "Black Jeans",
-            "price": 59.99
-        },
-        {
-            "id": 15,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/vy2q98s8ucsywwxjx2cf.png",
-            "title": "Cable-Knit Sweater",
-            "price": 49.99
-        },
-        {
-            "id": 16,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/smf81ubnfjennk9qbjm4.png",
-            "title": "Peacoat",
-            "price": 89.99
-        },
-        {
-            "id": 17,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/cvafl35dv9wzisdsgtd6.png",
-            "title": "Flannel Shirt",
-            "price": 34.99
-        },
-        {
-            "id": 18,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Windbreaker",
-            "price": 59.99
-        },
-        {
-            "id": 19,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567613/cwlk21f74nd9iamrlzkh.png",
-            "title": "Puffer Jacket",
-            "price": 119.99
-        },
-        {
-            "id": 20,
-            "image": "https://res.cloudinary.com/dlc5c1ycl/image/upload/v1710567612/qichw3wrcioebkvzudib.png",
-            "title": "Ripped Jeans",
-            "price": 69.99
+            "image": "https://frodos.com.vn/wp-content/uploads/2021/03/Capture-176.png.webp",
+            "title": "Rolex Yacht-Master",
+            "price": 12599.99
         }
     ],
     "users": [

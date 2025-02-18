@@ -1,4 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
+import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { Image, StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -6,45 +7,23 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 const Header = ({ isCart }) => {
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.appIconContainer}
-        onPress={() => {
-          navigation.navigate("HOME");
-        }}
-      >
-        {isCart ? (
-          <Ionicons
-            name="chevron-back"
-            color={"#E96E6E"}
-            backgroundColor={"#FFFFFF"}
-            size={28}
-          />
-        ) : (
-          <Image
-            source={require("../assets/apps.png")}
-            style={styles.appIcon}
-          />
-        )}
-      </TouchableOpacity>
-      {isCart && <Text style={styles.cartText}>My Cart</Text>}
-      <Image source={require("../assets/Ellipse2.png")} style={styles.dp} />
-    </View>
+    <LinearGradient colors={["#0A472E", "#114D3A"]} style={styles.container}>
+      <Image source={require("../assets/logo.png")} style={styles.appIcon} />
+    </LinearGradient>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 16,
     paddingTop: 16,
     backgroundColor: "#F9F9F9",
   },
   appIcon: {
-    height: 28,
-    width: 28,
+    height: 50,
+    width: 50,
   },
   appIconContainer: {
     backgroundColor: "#FFFFFF",

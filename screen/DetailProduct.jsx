@@ -12,7 +12,7 @@ import Header from "../components/Header";
 import { useRoute } from "@react-navigation/native";
 import { CartContext } from "../context/CartContext";
 
-const sizes = ["S", "M", "L", "XL"];
+const sizes = ["37", "40", "42", "44"];
 const colors = [
   "#91A1B0",
   "#B11D1D",
@@ -21,12 +21,14 @@ const colors = [
   "#1D752B",
   "#000000",
 ];
+
 const DetailProduct = () => {
   const route = useRoute();
   const product = route.params?.item;
   const { addToCart } = useContext(CartContext);
   const [selectedSize, setSelectedSize] = useState("S");
   const [selectedColor, setSelectedColor] = useState("#B11D1D");
+
   const handleAddToCart = () => {
     const updatedProduct = {
       ...product,
@@ -37,7 +39,7 @@ const DetailProduct = () => {
   };
 
   return (
-    <LinearGradient colors={["#FDF0F3", "#FFFBFC"]} style={styles.container}>
+    <LinearGradient colors={["#FFFFFF", "#F5F5F5"]} style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.headerContainer}>
           <Header />
@@ -47,20 +49,21 @@ const DetailProduct = () => {
           <Text style={styles.title}>{product.title}</Text>
           <Text style={[styles.title, styles.price]}>${product.price}</Text>
         </View>
-        <Text style={[styles.title, styles.sizeText]}>Size</Text>
+        <Text style={[styles.subtitle, styles.sizeText]}>Size</Text>
         <View style={styles.sizeContainer}>
           {sizes.map((size, index) => (
             <TouchableOpacity
               key={index}
-              style={styles.containerSizeValue}
-              onPress={() => {
-                setSelectedSize(size);
-              }}
+              style={[
+                styles.sizeOption,
+                selectedSize === size && styles.selectedSizeOption,
+              ]}
+              onPress={() => setSelectedSize(size)}
             >
               <Text
                 style={[
-                  styles.sizeValue,
-                  selectedSize == size && { color: "#E55B5B" },
+                  styles.sizeTextOption,
+                  selectedSize === size && styles.selectedSizeText,
                 ]}
               >
                 {size}
@@ -68,30 +71,20 @@ const DetailProduct = () => {
             </TouchableOpacity>
           ))}
         </View>
-        <Text style={[styles.title, styles.colorText]}>Colors</Text>
+        <Text style={[styles.subtitle, styles.colorText]}>Colors</Text>
         <View style={styles.colorContainer}>
-          {colors.map((color, index) => {
-            return (
-              <TouchableOpacity
-                style={[
-                  styles.colorBorder,
-                  { borderColor: selectedColor === color && "#E55B5B" },
-                ]}
-                onPress={() => {
-                  setSelectedColor(color);
-                }}
-                key={index}
-              >
-                <View
-                  key={index}
-                  style={[
-                    styles.containerColorValue,
-                    { backgroundColor: color },
-                  ]}
-                />
-              </TouchableOpacity>
-            );
-          })}
+          {colors.map((color, index) => (
+            <TouchableOpacity
+              key={index}
+              style={[
+                styles.colorOption,
+                selectedColor === color && styles.selectedColorOption,
+              ]}
+              onPress={() => setSelectedColor(color)}
+            >
+              <View style={[styles.colorPreview, { backgroundColor: color }]} />
+            </TouchableOpacity>
+          ))}
         </View>
         <TouchableOpacity style={styles.button} onPress={handleAddToCart}>
           <Text style={styles.buttonText}>Add To Cart</Text>
@@ -103,91 +96,107 @@ const DetailProduct = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
     flex: 1,
+    padding: 20,
   },
   headerContainer: {
     padding: 10,
   },
   coverImg: {
     width: "100%",
-    height: 550,
-    padding: 10,
+    height: 500,
+    borderRadius: 10,
+    marginVertical: 15,
   },
   contentContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginHorizontal: 20,
+    alignItems: "center",
+    marginBottom: 10,
   },
   title: {
-    fontSize: 20,
-    color: "#44444",
-    fontWeight: "500",
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#2C2C2C",
+    fontFamily: "serif",
   },
   price: {
-    color: "#4D4C4C",
+    fontSize: 24,
+    color: "#B11D1D",
+    fontWeight: "600",
   },
-  sizeText: {
-    marginHorizontal: 20,
-    marginTop: 10,
+  subtitle: {
+    fontSize: 18,
+    fontWeight: "500",
+    color: "#666",
+    marginVertical: 10,
   },
   sizeContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginHorizontal: 20,
+    marginBottom: 20,
   },
-  containerSizeValue: {
-    height: 36,
-    width: 36,
-    borderRadius: 18,
-    backgroundColor: "#FFFFFF",
+  sizeOption: {
+    height: 40,
+    width: 40,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#C0C0C0",
     justifyContent: "center",
     alignItems: "center",
-    marginHorizontal: 10,
   },
-  sizeValue: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#938F8F",
-    backgroundColor: "",
+  selectedSizeOption: {
+    borderColor: "#B11D1D",
+    backgroundColor: "#FFF5F5",
+  },
+  sizeTextOption: {
+    fontSize: 16,
+    color: "#666",
+  },
+  selectedSizeText: {
+    color: "#B11D1D",
   },
   colorText: {
-    marginHorizontal: 20,
-    marginTop: 10,
+    marginBottom: 10,
   },
   colorContainer: {
     flexDirection: "row",
+    alignItems: "center",
     justifyContent: "space-between",
-    marginHorizontal: 20,
-    marginTop: 10,
+    marginBottom: 20,
+  },
+  colorOption: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: "#E0E0E0",
+    justifyContent: "center",
     alignItems: "center",
   },
-  containerColorValue: {
-    height: 36,
+  selectedColorOption: {
+    borderColor: "#B11D1D",
+  },
+  colorPreview: {
     width: 36,
+    height: 36,
     borderRadius: 18,
   },
-  colorBorder: {
-    marginHorizontal: 5,
-    paddingHorizontal: 10,
-    width: 36,
-    height: 36,
-    borderRadius: 24,
-    alignItems: "center",
-    justifyContent: "center",
-    borderColor: "#000",
-  },
   button: {
-    backgroundColor: "#E96E6E",
-    padding: 10,
-    margin: 15,
-    borderRadius: 20,
+    backgroundColor: "#B11D1D",
+    paddingVertical: 15,
+    borderRadius: 25,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
   },
   buttonText: {
-    fontSize: 24,
-    fontWeight: "600",
-    color: "#fff",
-    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#FFFFFF",
   },
 });
 

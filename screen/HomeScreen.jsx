@@ -21,9 +21,12 @@ const HomeScreen = () => {
     setProducts(newProducts);
   };
   return (
-    <LinearGradient colors={["#FDF0F3", "#FFFBFC"]} style={styles.container}>
+    <LinearGradient colors={["#0A472E", "#114D3A"]} style={styles.container}>
       <Header />
-      <Text style={styles.matchText}>Match Your Style</Text>
+      <Text style={styles.matchText}>
+        "A great watch isn't defined by its price, but by the story it shares
+        with you."
+      </Text>
       <View style={styles.inputContainer}>
         <View style={styles.iconContainer}>
           <Fontisto name={"search"} size={20} color={"#C0C0C0"} />
@@ -67,8 +70,9 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: { padding: 20 },
   matchText: {
-    fontSize: 28,
-    color: "#000",
+    fontSize: 15,
+    textAlign: "center",
+    color: "#C5A880",
     marginTop: 25,
   },
   inputContainer: {
