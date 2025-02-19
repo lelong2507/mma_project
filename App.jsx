@@ -1,8 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "./screen/HomeScreen";
-import Reorder from "./screen/Reorder";
+import About from "./screen/About";
 import Cart from "./screen/Cart";
+import AntDesign from "react-native-vector-icons/AntDesign";
 import MaterialIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Entypo from "react-native-vector-icons/Entypo";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -59,12 +60,12 @@ export default function App() {
               }}
             />
             <Tab.Screen
-              name="REORDER"
-              component={Reorder}
+              name="ABOUT"
+              component={About}
               options={{
                 tabBarIcon: ({ size, focused, color }) => (
-                  <MaterialIcons
-                    name={"reorder-horizontal"}
+                  <AntDesign
+                    name={"trademark"}
                     size={size}
                     focused={focused}
                     color={color}
