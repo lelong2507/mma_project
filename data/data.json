@@ -1,68 +1,72 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "image": "https://file.hstatic.net/1000093649/file/ong-ho-rolex-steel-submariner-date-the-hulk-green-dial-116610lv-40mm-1_9881ecc02c174dc58f3400d403186482_grande.jpg",
-            "title": "Rolex Submariner",
-            "price": 8499.99
-        },
-        {
-            "id": 2,
-            "image": "https://file.hstatic.net/1000093649/file/dong-ho-rolex-datejust-126300-mgflmij-41mm-1_32c9c61a75e04d4ea4699d08fc84a140_grande.jpg",
-            "title": "Rolex Datejust",
-            "price": 7399.99
-        },
-        {
-            "id": 3,
-            "image": "https://24kara.com/files/sanpham/31334/1/jpg/dong-ho-rolex-cosmograph-daytona-m126519ln-0006-126519ln-0006-white-gold-mat-so-xam-thep-va-den-sang-mau-moi-2023.jpg",
-            "title": "Rolex Daytona",
-            "price": 12999.99
-        },
-        {
-            "id": 4,
-            "image": "https://empireluxury.vn/wp-content/uploads/2022/04/dong-ho-rolex-gmt-master-ii-40-126715chnr-0001-rootbeer-mat-so-den-day-deo-oyster-vang-hong-9.png",
-            "title": "Rolex GMT-Master II",
-            "price": 11499.99
-        },
-        {
-            "id": 5,
-            "image": "https://bloombarwatches.com/wp-content/uploads/2022/10/2022-Rolex-Explorer-124273-Black-DLC-CM681-0002-scaled.jpg",
-            "title": "Rolex Explorer",
-            "price": 6499.99
-        },
-        {
-            "id": 6,
-            "image": "https://empireluxury.vn/wp-content/uploads/2022/04/dong-ho-rolex-milgauss-40-116400gv-0001-mat-so-den-day-oyster-3.jpg",
-            "title": "Rolex Milgauss",
-            "price": 8499.99
-        },
-        {
-            "id": 7,
-            "image": "https://empireluxury.vn/wp-content/uploads/2024/07/dong-ho-rolex-day-date-36-128238-mat-so-xanh-la-cay-sao-chep-8.jpg",
-            "title": "Rolex Sky-Dweller",
-            "price": 16999.99
-        },
-        {
-            "id": 8,
-            "image": "https://frodos.com.vn/wp-content/uploads/2021/03/Capture-176.png.webp",
-            "title": "Rolex Yacht-Master",
-            "price": 12599.99
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "email": "johndoe@example.com",
-            "password": "1",
-            "image": "https://png.pngtree.com/png-clipart/20240705/original/pngtree-web-programmer-avatar-png-image_15495270.png"
-        },
-        {
-            "id": 2,
-            "name": "Alex Sander",
-            "email": "alexsander@example.com",
-            "password": "1",
-            "image": "https://img.freepik.com/premium-photo/female-developer-background_665280-9650.jpg"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "image": "https://file.hstatic.net/1000093649/file/ong-ho-rolex-steel-submariner-date-the-hulk-green-dial-116610lv-40mm-1_9881ecc02c174dc58f3400d403186482_grande.jpg",
+      "title": "Rolex Submariner",
+      "price": 8499.99
+    },
+    {
+      "id": 2,
+      "image": "https://file.hstatic.net/1000093649/file/dong-ho-rolex-datejust-126300-mgflmij-41mm-1_32c9c61a75e04d4ea4699d08fc84a140_grande.jpg",
+      "title": "Rolex Datejust",
+      "price": 7399.99
+    },
+    {
+      "id": 3,
+      "image": "https://24kara.com/files/sanpham/31334/1/jpg/dong-ho-rolex-cosmograph-daytona-m126519ln-0006-126519ln-0006-white-gold-mat-so-xam-thep-va-den-sang-mau-moi-2023.jpg",
+      "title": "Rolex Daytona",
+      "price": 12999.99
+    },
+    {
+      "id": 4,
+      "image": "https://empireluxury.vn/wp-content/uploads/2022/04/dong-ho-rolex-gmt-master-ii-40-126715chnr-0001-rootbeer-mat-so-den-day-deo-oyster-vang-hong-9.png",
+      "title": "Rolex GMT-Master II",
+      "price": 11499.99
+    },
+    {
+      "id": 5,
+      "image": "https://bloombarwatches.com/wp-content/uploads/2022/10/2022-Rolex-Explorer-124273-Black-DLC-CM681-0002-scaled.jpg",
+      "title": "Rolex Explorer",
+      "price": 6499.99
+    },
+    {
+      "id": 6,
+      "image": "https://empireluxury.vn/wp-content/uploads/2022/04/dong-ho-rolex-milgauss-40-116400gv-0001-mat-so-den-day-oyster-3.jpg",
+      "title": "Rolex Milgauss",
+      "price": 8499.99
+    },
+    {
+      "id": 7,
+      "image": "https://empireluxury.vn/wp-content/uploads/2024/07/dong-ho-rolex-day-date-36-128238-mat-so-xanh-la-cay-sao-chep-8.jpg",
+      "title": "Rolex Sky-Dweller",
+      "price": 16999.99
+    },
+    {
+      "id": 8,
+      "image": "https://frodos.com.vn/wp-content/uploads/2021/03/Capture-176.png.webp",
+      "title": "Rolex Yacht-Master",
+      "price": 12599.99
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "aa",
+      "password": "1",
+      "image": "https://png.pngtree.com/png-clipart/20240705/original/pngtree-web-programmer-avatar-png-image_15495270.png"
+    },
+    {
+      "id": 2,
+      "name": "Alex Sander",
+      "email": "bb",
+      "password": "1",
+      "image": "https://img.freepik.com/premium-photo/female-developer-background_665280-9650.jpg"
+    }
+  ],
+  "like": [
+    { "idProduct": 1, "idUser": 1 },
+    { "idProduct": 1, "idUser": 2 }
+  ]
 }
