@@ -28,6 +28,9 @@ const DetailProduct = () => {
   const { addToCart } = useContext(CartContext);
   const [selectedSize, setSelectedSize] = useState("S");
   const [selectedColor, setSelectedColor] = useState("#B11D1D");
+  const getImageByColor = (color) => {
+    return product.images[color] || product.image; // Dùng ảnh mặc định nếu không có màu tương ứng
+  };
 
   const handleAddToCart = () => {
     const updatedProduct = {
@@ -44,7 +47,11 @@ const DetailProduct = () => {
         <View style={styles.headerContainer}>
           <Header />
         </View>
-        <Image source={{ uri: product.image }} style={styles.coverImg} />
+        <Image
+          source={{ uri: getImageByColor(selectedColor) }}
+          style={styles.coverImg}
+        />
+
         <View style={styles.contentContainer}>
           <Text style={styles.title}>{product.title}</Text>
           <Text style={[styles.title, styles.price]}>${product.price}</Text>
