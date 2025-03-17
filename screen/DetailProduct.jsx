@@ -35,6 +35,7 @@ const DetailProduct = () => {
   const handleAddToCart = () => {
     const updatedProduct = {
       ...product,
+      image: getImageByColor(selectedColor),
       color: selectedColor,
       size: selectedSize,
     };
